@@ -1,0 +1,19 @@
+{
+  "name": "w4-tictactoe",
+  "version": "1.0.0",
+  "description": "Please take no more than 45 mins on the following challenge. We're mostly looking for coding style & a clean design.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
