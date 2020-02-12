@@ -15,15 +15,17 @@ Input: x y is a 0 based x-y offset
   where x = horizontal offset
         y = vertical offset
  
-  e.g. given position (1, 2), 1 to right, 2 down.
+  e.g. given position (1, 2), 1 down, 2 right.
 
+```
   0 1 2
 0 _|_|_
 1 _|_|_
 2  | |
+```
 
 ## Adding AI
-- TicTacToe constructor accepts a player object. If the player is provided with a `generateMove` function the engine will detect and invoke it automatically, [Example|https://github.com/jtgi/2020/blob/master/w4-tictactoe/drivers/cli.js#L8]. If both players provide generation functions as in [autoplay|https://github.com/jtgi/2020/blob/master/w4-tictactoe/drivers/autoplay.js#L6-L7] it'll just play itself. 
+- TicTacToe constructor accepts a player object. If the player is provided with a `generateMove` function the engine will detect and invoke it automatically, [https://github.com/jtgi/2020/blob/master/w4-tictactoe/drivers/cli.js#L8](example). If both players provide generation functions as in [https://github.com/jtgi/2020/blob/master/w4-tictactoe/drivers/autoplay.js#L6-L7](autoplay) it'll just play itself. 
 
 ## Components:
 - lib/tictactoe.js
@@ -36,6 +38,4 @@ Input: x y is a 0 based x-y offset
   - autoplay.js: configures two dumb AIs against each other.
 
 # Other
-- the UX is bad :)
-- node's ES6 classes too clunky, would do more functional/stateless next time. or just typescript/babel.
-- didn't have time to make ascii fireworks when you win :/
+- the class is too stateful, would rewrite in a more stateless functional style. especially with node's es6 support. 
